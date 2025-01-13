@@ -21,13 +21,6 @@ html {
 		url('fonts/verdana.svg#verdana') format('svg');
 }
 
-/*Оболочка*/
-
-.background {
-	background-image: url('../img/main background 2.png');
-	background-repeat: repeat;
-}
-
 /*Шапка*/
 
 .top-nav {
@@ -124,6 +117,10 @@ html {
 
 @media (max-width: 600px) {
 	@media (orientation: portrait) {
+		.top-nav {
+			background-color: #1e1e20;
+		}
+
 		.menu-button-container {
 			display: flex;
 		}
@@ -161,13 +158,19 @@ html {
 			padding: 0.5em 0;
 			width: 100%;
 			color: white;
-			background-color: #1e1e2071;
+			background-color: #1e1e20;
 			font-size: 2.24vh;
 		}
 	}
 }
 
 /*Тело*/
+
+.background {
+	background-image: url('../img/main background 2.png');
+	background-repeat: repeat;
+}
+
 /*Обложка*/
 
 .Cover {
@@ -176,13 +179,12 @@ html {
 	background-size: cover;
 	background-position: center 0;
 	height: 100vh;
-	position: relative;
 }
 
 .text-On-Photo {
 	color: #fff;
 	height: 60vh;
-	width: 80vw;
+	width: 75vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -194,19 +196,19 @@ html {
 	margin: auto;
 }
 
-.text-On-Photo h2 {
+.text-On-Photo h1 {
 	font-size: 3.4vw;
 	font-style: italic;
 	font-weight: bold;
 }
 
-.text-On-Photo h3 {
+.text-On-Photo h2 {
 	font-size: 1.44vw;
 	font-weight: 100;
 	padding-bottom: 6vh;
 }
 
-.button-signUp a {
+.button-signUp {
 	background-color: #962715;
 	padding: 2.3vh 5vh;
 	border-radius: 1.3vw;
@@ -221,16 +223,16 @@ html {
 			width: 90vw;
 		}
 
-		.text-On-Photo h2 {
+		.text-On-Photo h1 {
 			font-size: 3.5vh;
 		}
 
-		.text-On-Photo h3 {
+		.text-On-Photo h2 {
 			font-size: 2.5vh;
 			padding-bottom: 6vh;
 		}
 
-		.button-signUp a {
+		.button-signUp {
 			font-size: 2.5vh;
 			padding: 2.3vh 5vh;
 			border-radius: 2vh;
@@ -240,34 +242,120 @@ html {
 
 /*Преимущества*/
 
-.Advantages {
-	color: #fff;
-	height: 100vh;
-}
-
 .Advantages ul {
 	list-style-type: none;
-	margin-left: 12.4vw;
-	padding-right: 12.4vw;
-	margin-top: 7vh;
+	width: 75vw;
+	margin: auto;
 }
 
 .Advantages li {
-	margin-top: 7.7vh;
-	font-size: 1.2vw;
-	display: inline-block;
+	color: #fff;
+	height: 100vh;
+	padding: 9vh 0;
+	/*Равномерно распределяет элементы по горизонтали*/
+	display: flex;
+	justify-content: space-between;
 }
 
-.Advantages img {
-	filter: invert();
-	width: 4.6vw;
-	padding-right: 2vw;
+.advantage-points {
+	padding: 9vh 0;
+	font-size: 1.17vw;
+	width: 33vw;
+	/*Равномерно распределяет элементы по вертикали*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.advantage-points h1 {
+	font-size: 3.01vw;
+	font-style: italic;
+}
+
+.advantages-points h2 {
+	font-size: 1.44vw;
+}
+
+.advantage-img-h,
+.advantage-img-w {
+	/*Один элемент по вертикали по центру*/
+	align-self: center;
+}
+
+.advantage-img-h img {
+	height: 40vw;
+}
+
+.advantage-img-w img {
+	width: 40vw;
+}
+
+.advantage-img-mob {
+	display: none;
 }
 
 @media (orientation: portrait) {
+	@media (max-width: 1024px) {
+		.Advantages ul {
+			width: 90vw;
+		}
+
+		.Advantages li {
+			height: 100%;
+			padding: 4.2vw 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.advantage-points {
+			padding: 0 0;
+			font-size: 2.73vh;
+			width: 90vw;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.advantage-points div {
+			padding: 2.8vh 0;
+		}
+
+		.advantage-points h1 {
+			font-size: 4vh;
+			font-style: italic;
+		}
+
+		.advantage-points h2 {
+			font-size: 3.3vh;
+		}
+
+		.advantage-img-h,
+		.advantage-img-w {
+			text-align: center;
+			padding: 10vw 0;
+		}
+
+		.advantage-img-h img {
+			height: 90vw;
+		}
+
+		.advantage-img-w img {
+			width: 90vw;
+		}
+
+		.advantage-img-pc {
+			display: none;
+		}
+
+		.advantage-img-mob {
+			display: inline;
+		}
+	}
 }
 
-/*Видео или О нас. ХЗ как назовем*/
+/*О нас*/
 
 .Stocks h1 {
 	padding-top: 45px;
@@ -277,20 +365,28 @@ html {
 
 /*Услуги*/
 
-.Services h1 {
-	padding-top: 45px;
-	margin-left: 190px;
-	padding-right: 190px;
+.Services {
+	height: 100vh;
+	position: relative;
 }
 
 .Services ul {
+	height: 75vh;
+	width: 80vw;
 	list-style-type: none;
-	padding-top: 45px;
-	padding-bottom: 45px;
-	margin-left: 190px;
-	padding-right: 190px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
+
 .Services li {
+	color: #fff;
 	font-size: 28px;
 	width: 100%;
 	display: inline-flex;
@@ -302,11 +398,22 @@ html {
 }
 
 .line {
-	background-color: #1e1e20;
+	background-color: #fff;
 	width: 100%;
 	height: 1px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+}
+
+@media (orientation: portrait) {
+	@media (max-width: 1024px) {
+		.Services ul {
+			height: 75vh;
+			width: 90vw;
+		}
+
+		.Services li {
+			font-size: 1.5vh;
+		}
+	}
 }
 
 /*Отзывы*/
