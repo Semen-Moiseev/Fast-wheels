@@ -9,23 +9,33 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<div class="top-nav">
-					<a class="header-logo" href="index.html"
-						><img src="img/logo.png"
-					/></a>
+				<div class="header-wrapper">
+					<div class="header-container">
+						<div class="header-logo">
+							<a href="index.html"><img src="img/logo.png" /></a>
+						</div>
 
-					<input id="menu-toggle" type="checkbox" />
-					<label class="menu-button-container" for="menu-toggle">
-						<div class="menu-button"></div>
-					</label>
+						<input id="menu-toggle" type="checkbox" />
+						<label class="menu-button-container" for="menu-toggle">
+							<div class="menu-button"></div>
+						</label>
 
-					<ul class="menu">
-						<li>Преимущества</li>
-						<li>О нас</li>
-						<li>Услуги</li>
-						<li>Отзывы</li>
-						<li>Контакты</li>
-					</ul>
+						<div class="menu-div">
+							<div><a>Преимущества</a></div>
+							<div><a>О нас</a></div>
+							<div><a>Услуги</a></div>
+							<div><a>Отзывы</a></div>
+							<div><a>Контакты</a></div>
+						</div>
+
+						<ul class="menu-ul">
+							<li><a>Преимущества</a></li>
+							<li><a>О нас</a></li>
+							<li><a>Услуги</a></li>
+							<li><a>Отзывы</a></li>
+							<li><a>Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 			</header>
 
@@ -49,7 +59,7 @@
 						</div>
 					</div>
 
-					<div class="Advantages">
+					<!--<div class="Advantages">
 						<ul>
 							<li>
 								<div class="advantage-points">
@@ -134,160 +144,191 @@
 						</ul>
 					</div>
 
-					<!--<div class="Stocks">
-						<h1>Буит красивое видео про сервис</h1>
-					</div>-->
-
-					<!--<div class="Services">
-						<ul>
-							<li>
-								<div class="service">ARSZAG шиномонтаж</div>
-								<div class="price">15000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Комплекс шиномонтажа</div>
-								<div class="price">9000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">ARSZAG балансировка</div>
-								<div class="price">13000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Балансировка колес</div>
-								<div class="price">6000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Сборка колес</div>
-								<div class="price">8000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Разборка колес</div>
-								<div class="price">7000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Виброконтроль и увод шин</div>
-								<div class="price">5000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Монтаж/демонтаж датчика давления</div>
-								<div class="price">1000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Устранение прокола</div>
-								<div class="price">5000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Монтаж/демонтаж колес</div>
-								<div class="price">2500 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Подготовка посадочных мест</div>
-								<div class="price">2500 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Химчистка колес</div>
-								<div class="price">4000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Замена ниппеля</div>
-								<div class="price">1000 р</div>
-							</li>
-							<div class="line"></div>
-
-							<li>
-								<div class="service">Хранение колес</div>
-								<div class="price">9500 р</div>
-							</li>
-							<div class="line"></div>
-						</ul>
-					</div>
-
-					<div class="Reviews">
-						<h1>Отзывы</h1>
-
-						<div class="slider">
-							<div class="slides">
-								<input class="check3" type="radio" name="r" id="r1" checked />
-								<input class="check3" type="radio" name="r" id="r2" />
-								<input class="check3" type="radio" name="r" id="r3" />
-								<input class="check3" type="radio" name="r" id="r4" />
-
-								<div class="slide s1">
-									<img src="img/feedback1.png" />
-								</div>
-								<div class="slide">
-									<img src="img/feedback2.png" />
-								</div>
-								<div class="slide">
-									<img src="img/feedback3.png" />
-								</div>
-								<div class="slide">
-									<img src="img/feedback4.png" />
-								</div>
+					<div class="About">
+						<div class="about-wrapper">
+							<div>
+								<h1>Ну типа: "Познакомьтесь с нами поближе"</h1>
 							</div>
-
-							<button class="prev-button">&lt;</button>
-							<button class="next-button">&gt</button>
-
-							<div class="slider-nav">
-								<label for="r1" class="bar"></label>
-								<label for="r2" class="bar"></label>
-								<label for="r3" class="bar"></label>
-								<label for="r4" class="bar"></label>
+							<div class="about-video">
+								<iframe
+									src="https://rutube.ru/play/embed/c71a722e6f74234eba54043ca507572b/"
+									frameborder="0"
+									allow="clipboard-write; autoplay"
+									webkitAllowFullScreen
+									mozallowfullscreen
+									allowfullscreen
+								></iframe>
 							</div>
 						</div>
 					</div>
 
-					<div class="Contacts">
-						<img class="backMap" src="img/map.jpg" />
-						<div class="onMap">
-							<h2>Контакты</h2>
+					<div class="Services">
+						<div class="services-wrapper">
+							<div>
+								<div><h1>Шиномонтаж</h1></div>
+								<div class="services-table">
+									<table>
+										<thead class="column-header">
+											<tr>
+												<td>Пакет</td>
+												<td class="column-middle">Список услуг</td>
+												<td class="services-price">
+													Цена<br />R13-18 / R19-22 / R23-25
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="row-middle">
+												<td>Стандарт</td>
+												<td class="column-middle">
+													<ul>
+														<li>Снятие/установка</li>
+														<li class="otst">Мойка колес</li>
+														<li class="otst">Демонтаж/монтаж резины</li>
+														<li class="otst">Балансировка</li>
+														<li class="otst">
+															Очистка привалочных поверхностей
+														</li>
+													</ul>
+												</td>
+												<td class="services-price">2640 р / 3200 р / 6040 р</td>
+											</tr>
 
-							<div class="contacts">
-								<div class="cont">
-									Наш телефон: +7 987-654-32-10
+											<tr class="row-middle">
+												<td>Комфорт</td>
+												<td class="column-middle">
+													<ul>
+														<li>Снятие/установка</li>
+														<li class="otst">Мойка колес</li>
+														<li class="otst">Демонтаж/монтаж резины</li>
+														<li class="otst">
+															Очистка привалочных поверхностей
+														</li>
+														<li class="otst">Лазерная диагностика диска</li>
+														<li class="otst">Балансировка</li>
+													</ul>
+												</td>
+												<td class="services-price">4240 р / 4600 р / 7440 р</td>
+											</tr>
+
+											<tr class="row-middle">
+												<td>Премиум</td>
+												<td class="column-middle">
+													<ul>
+														<li>Снятие/установка</li>
+														<li class="otst">Химчистка колес (шин и дисков)</li>
+														<li class="otst">
+															Очистка привалочных поверхностей
+														</li>
+														<li class="otst">Демонтаж/монтаж резины</li>
+														<li class="otst">Лазерная диагностика диска</li>
+														<li class="otst">Балансировка с виброконтролем</li>
+														<li class="otst">
+															Расположение колес автомобиля с минимальным
+															радиальным уводом
+														</li>
+														<li class="otst">
+															Подгонка шин по силовой неоднородности
+														</li>
+														<li class="otst">
+															Установка колеса с нулевым зазором
+														</li>
+													</ul>
+												</td>
+												<td class="services-price">
+													19040 р / 21000 р / 26640 р
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="cont">
-									Наш адрес: </span> г. Барнаул, ул. Чудненко, 20
+							</div>
+							<div>
+								<div><h1>Сход-развал</h1></div>
+								<div class="services-table">
+									<table>
+										<thead class="column-header">
+											<tr>
+												<td>Пакет</td>
+												<td class="column-middle">Список услуг</td>
+												<td class="services-price">Цена<br />1 ось / 2 оси</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="row-middle">
+												<td>Легковые автомобили</td>
+												<td class="column-middle">
+													<ul>
+														<li>
+															Регулировка развал-схождения колес на легковых
+															автомобилях
+														</li>
+													</ul>
+												</td>
+												<td class="services-price">3000 р / 4500 р</td>
+											</tr>
+
+											<tr class="row-middle">
+												<td>Универсалы повышенной вместимости</td>
+												<td class="column-middle">
+													<ul>
+														<li>
+															Регулировка развал-схождения колес на
+															внедорожниках, минивэнах, микроавтобусах
+														</li>
+													</ul>
+												</td>
+												<td class="services-price">4000 р / 5500 р</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="cont">
-									Адрес электронной почты: Адрес@gmail.com
-								</div>
-								<div class="cont">
-									Наш Telegram-канал: Ссылочка на телегу
-								</div>
-								<div class="cont">
-									Наш WhatsApp: Ссылка или что для ватсапа
-								</div>
-								<div class="cont">Наш Вконтакте: И ссылка на ВК</div>
-								<br>
-								<div class="cont">Мы в 2GIS: Ссылка</div>
-								<div class="cont">Мы на Яндекс-картах: Ссылка</div>
-								<div class="cont">Мы на Google-картах: Ссылка</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="Reviews"></div>
+
+					<div class="Contacts">
+						<div><h2>Студия Fast wheels</h2></div>
+
+						<div><h1>КОНТАКТЫ</h1></div>
+
+						<div class="contacts">
+							<div class="cont"><span>Наш телефон:</span> +7 987-654-32-10</div>
+							<div class="cont">
+								<span>Наш адрес:</span> г. Барнаул, Павловский тракт, 198и
+							</div>
+							<div class="cont">
+								<span>Адрес электронной почты:</span> Почта@gmail.com
+							</div>
+							<div class="cont">
+								<span>Наш Telegram-канал:</span>
+								<a href="">Ссылочка на телеграм</a>
+							</div>
+							<div class="cont">
+								<span>Наш WhatsApp:</span>
+								<a href="">Ссылка или что для ватсапа</a>
+							</div>
+							<div class="cont">
+								<span>Наш Вконтакте:</span> <a href="">И ссылка на ВК</a>
+							</div>
+							<br />
+							<div class="cont">
+								<span>Мы в 2GIS:</span>
+								<a href="https://go.2gis.com/Dgbgz">А тут ссылка на 220гис</a>
+							</div>
+							<div class="cont">
+								<span>Мы на Яндекс-картах:</span>
+								<a href="https://yandex.ru/maps/-/CHUseXjK"
+									>Ссылка карты в Яндексаторе</a
+								>
+							</div>
+							<div class="cont">
+								<span>Мы на Google-картах:</span>
+								<a href="https://maps.app.goo.gl/1aeb7gDHp4NZffFWA"
+									>Карты Гулу Гулу</a
+								>
 							</div>
 						</div>
 					</div>-->
@@ -295,25 +336,23 @@
 			</main>
 
 			<!--<footer>
-				<div class="footLogo footPoint">
-					<img src="img/logo.png" />
-				</div>
+				<div class="footer-container">
+					<div class="footLogo">
+						<img src="img/logo.png" />
+					</div>
 
-				<div class="foot-navigation footPoint">
-					<nav class="foot-nav">
-						<a>Преимущества</a>
-						<a>Акции</a>
-						<a>Услуги</a>
-						<a>Отзывы</a>
-						<a>Контакты</a>
-					</nav>
-				</div>
+					<div class="foot-navigation">
+						<div><a>Преимущества</a></div>
+						<div><a>Акции</a></div>
+						<div><a>Услуги</a></div>
+						<div><a>Отзывы</a></div>
+						<div><a>Контакты</a></div>
+					</div>
 
-				<div class="foot-contact footPoint">
-					<div class="contact">
-						<p>+7 987-654-32-10</p>
-						<p>Адрес</p>
-						<p>Почта</p>
+					<div class="foot-contact">
+						<div>+7 987-654-32-10</div>
+						<div>Почта@gmail.com</div>
+						<div>г. Барнаул, Павловский тракт, 198и</div>
 					</div>
 				</div>
 			</footer>-->
