@@ -504,7 +504,7 @@ html {
 /*Контакты*/
 
 .Contacts {
-	height: 700px;
+	height: 720px;
 	padding: 80px 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url('../img/map.jpg');
@@ -601,19 +601,29 @@ html {
 
 footer {
 	padding: 25px 0;
-	background-color: #1e1e20;
+	background-color: #000000;
+
 	display: flex;
 	justify-content: center;
 }
 
+.footer-wrapper {
+	width: 100%;
+}
+
 .footer-container {
-	width: 75vw;
-	height: 20vh;
+	height: 100px;
+	max-width: 1840px;
+	padding: 0 100px;
+	margin: auto;
+
 	display: flex;
 	justify-content: space-between;
+	align-self: center;
 }
 
 .footLogo {
+	height: 35px;
 	align-self: center;
 }
 
@@ -621,26 +631,20 @@ footer {
 	height: 35px;
 }
 
-.foot-navigation {
-	color: #fff;
-	font-size: 18px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .foot-contact {
+	height: 100px;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
 	.footer-container {
-		height: 35vh;
-		width: 90vw;
+		height: 200px;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
