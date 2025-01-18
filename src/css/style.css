@@ -178,7 +178,7 @@ html {
 	/*background-image: url('../img/background.png');
 	background-size: contain;
 	background-repeat: repeat;*/
-	background-color: #000000;
+	background-color: #1e1e20;
 }
 
 /*Обложка*/
@@ -278,6 +278,10 @@ html {
 }
 
 .advantages-container li {
+	background-image: url('../img/background-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	color: #fff;
 
 	display: flex;
@@ -286,12 +290,10 @@ html {
 
 .point-first {
 	padding: 100px 40px;
-	padding-bottom: 40px;
 }
 
 .point-second {
 	padding: 0 40px;
-	padding-bottom: 40px;
 }
 
 .advantage-points {
@@ -335,7 +337,6 @@ html {
 
 	.advantage-points {
 		width: 400px;
-		margin-bottom: 20px;
 	}
 
 	.advantage-img img {
@@ -361,16 +362,18 @@ html {
 
 	.point-first {
 		padding: 100px 20px;
-		padding-bottom: 20px;
 	}
 
 	.point-second {
 		padding: 0 20px;
-		padding-bottom: 20px;
 	}
 
 	.advantage-points {
 		width: 300px;
+	}
+
+	.point-text {
+		margin-top: 30px;
 	}
 
 	.advantage-points h1 {
@@ -400,10 +403,19 @@ html {
 		align-self: center;
 	}
 
+	.point-text {
+		margin-top: 20px;
+	}
+
 	.advantages-container li {
+		background-image: none;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	.advantage-img {
+		margin-top: 20px;
 	}
 
 	.advantage-img-pc {
@@ -412,6 +424,10 @@ html {
 
 	.advantage-img-mob {
 		display: inline;
+	}
+
+	.point-br {
+		display: none;
 	}
 }
 
