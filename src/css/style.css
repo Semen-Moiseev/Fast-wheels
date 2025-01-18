@@ -170,6 +170,12 @@ html {
 		background-color: #000000cb;
 		font-size: 2.24vh;
 	}
+
+	@media (max-width: 460px) {
+		.header-container {
+			padding: 0 30px;
+		}
+	}
 }
 
 /*Тело*/
@@ -269,20 +275,27 @@ html {
 	}
 }
 
+@media (max-width: 320px) {
+	.text-On-Photo {
+		padding: 0 20px;
+	}
+}
+
 /*Преимущества*/
 
 .advantages-container {
 	list-style-type: none;
 	max-width: 1200px;
 	margin: auto;
+	color: #fff;
 }
 
-.advantages-container li {
+.point-li {
 	background-image: url('../img/background-logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	color: #fff;
+	padding-bottom: 35px;
 
 	display: flex;
 	justify-content: space-between;
@@ -330,6 +343,18 @@ html {
 	display: none;
 }
 
+.advantage-button-wrapper {
+	text-align: center;
+}
+
+.advantage-button-signUp {
+	background-color: #962715;
+	padding: 16px 35px;
+	border-radius: 15px;
+	font-size: 22px;
+	font-weight: 200;
+}
+
 @media (max-width: 1200px) {
 	.advantages-container {
 		width: 960px;
@@ -353,7 +378,7 @@ html {
 		width: 640px;
 	}
 
-	.advantages-container li {
+	.point-li {
 		height: 100%;
 
 		display: flex;
@@ -407,7 +432,7 @@ html {
 		margin-top: 20px;
 	}
 
-	.advantages-container li {
+	.point-li {
 		background-image: none;
 		display: flex;
 		flex-direction: column;
@@ -431,6 +456,12 @@ html {
 	}
 }
 
+@media (max-width: 460px) {
+	.advantage-button-signUp {
+		font-size: 3.95vw;
+	}
+}
+
 @media (max-width: 320px) {
 	.advantage-points h1 {
 		font-size: 22px;
@@ -447,7 +478,7 @@ html {
 		align-self: center;
 	}
 
-	.advantages-container li {
+	.point-li {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
