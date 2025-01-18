@@ -24,7 +24,7 @@ html {
 /*Шапка*/
 
 .header-wrapper {
-	height: 60px;
+	height: 80px;
 	width: 100%;
 	z-index: 10;
 	position: fixed;
@@ -33,7 +33,7 @@ html {
 }
 
 .header-container {
-	height: 60px;
+	height: 100%;
 	max-width: 1840px;
 	padding: 0 100px;
 	margin: auto;
@@ -115,6 +115,12 @@ html {
 	list-style-type: none;
 }
 
+.menu-div a,
+.menu-ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
 @media (max-width: 1100px) {
 	.menu-button-container {
 		text-align: center;
@@ -169,8 +175,10 @@ html {
 /*Тело*/
 
 .background {
-	background-image: url('../img/background.png');
-	background-repeat: repeat;
+	/*background-image: url('../img/background.png');
+	background-size: contain;
+	background-repeat: repeat;*/
+	background-color: #000000;
 }
 
 /*Обложка*/
@@ -178,8 +186,8 @@ html {
 .Cover {
 	height: 100vh;
 	width: 100vw;
-	padding: 80px 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	padding: 100px 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url('../img/background-cover.png');
 	background-size: cover;
 	background-position: center 0;
@@ -208,6 +216,7 @@ html {
 .text-On-Photo h2 {
 	font-size: 22px;
 	font-weight: 100;
+	color: #bbc3c6;
 }
 
 .button-signUp {
@@ -262,106 +271,139 @@ html {
 
 /*Преимущества*/
 
-.Advantages ul {
+.advantages-container {
 	list-style-type: none;
-	width: 75vw;
+	max-width: 1200px;
 	margin: auto;
 }
 
-.Advantages li {
+.advantages-container li {
 	color: #fff;
-	height: 100vh;
-	padding: 9vh 0;
-	/*Равномерно распределяет элементы по горизонтали*/
+
 	display: flex;
 	justify-content: space-between;
+}
+
+.point-first {
+	padding: 100px 40px;
+	padding-bottom: 40px;
+}
+
+.point-second {
+	padding: 0 40px;
+	padding-bottom: 40px;
 }
 
 .advantage-points {
-	padding: 9vh 0;
-	font-size: 1.17vw;
-	width: 33vw;
-	/*Равномерно распределяет элементы по вертикали*/
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	font-size: 16px;
+	width: 500px;
 }
 
 .advantage-points h1 {
-	font-size: 3.01vw;
+	font-size: 38px;
 	font-style: italic;
 }
 
-.advantages-points h2 {
-	font-size: 1.44vw;
+.advantage-points h2 {
+	font-size: 24px;
 }
 
-.advantage-img-h,
-.advantage-img-w {
-	/*Один элемент по вертикали по центру*/
+.point-text {
+	margin-top: 50px;
+}
+
+.advantage-img {
 	align-self: center;
 }
 
-.advantage-img-h img {
-	height: 80vh;
+.advantage-img img {
+	width: 430px;
 }
 
 .advantage-img-w img {
-	width: 40vw;
+	width: 530px;
 }
 
 .advantage-img-mob {
 	display: none;
 }
 
-@media (orientation: portrait) and (max-width: 1200px) {
-	.Advantages ul {
-		width: 90vw;
-	}
-
-	.Advantages li {
-		height: 100%;
-		padding: 4.2vw 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+@media (max-width: 1200px) {
+	.advantages-container {
+		width: 960px;
 	}
 
 	.advantage-points {
-		padding: 0 0;
-		font-size: 2.73vh;
-		width: 90vw;
+		width: 400px;
+		margin-bottom: 20px;
+	}
+
+	.advantage-img img {
+		width: 370px;
+	}
+
+	.advantage-img-w img {
+		width: 450px;
+	}
+}
+
+@media (max-width: 960px) {
+	.advantages-container {
+		width: 640px;
+	}
+
+	.advantages-container li {
+		height: 100%;
 
 		display: flex;
-		flex-direction: column;
 		justify-content: space-between;
 	}
 
-	.advantage-points div {
-		padding: 2.8vh 0;
+	.point-first {
+		padding: 100px 20px;
+		padding-bottom: 20px;
+	}
+
+	.point-second {
+		padding: 0 20px;
+		padding-bottom: 20px;
+	}
+
+	.advantage-points {
+		width: 300px;
 	}
 
 	.advantage-points h1 {
-		font-size: 4vh;
+		font-size: 28px;
 		font-style: italic;
 	}
 
 	.advantage-points h2 {
-		font-size: 3.3vh;
+		font-size: 22px;
 	}
 
-	.advantage-img-h,
-	.advantage-img-w {
-		text-align: center;
-		padding: 10vw 0;
-	}
-
-	.advantage-img-h img {
-		height: 90vw;
+	.advantage-img img {
+		width: 270px;
 	}
 
 	.advantage-img-w img {
-		width: 90vw;
+		width: 280px;
+	}
+}
+
+@media (max-width: 640px) {
+	.advantages-container {
+		width: 100%;
+	}
+
+	.advantage-points {
+		align-self: center;
+	}
+
+	.advantages-container li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.advantage-img-pc {
@@ -370,6 +412,33 @@ html {
 
 	.advantage-img-mob {
 		display: inline;
+	}
+}
+
+@media (max-width: 320px) {
+	.advantage-points h1 {
+		font-size: 22px;
+		font-style: italic;
+	}
+
+	.advantage-points h2 {
+		font-size: 18px;
+	}
+
+	.advantage-points {
+		width: 100%;
+		font-size: 14px;
+		align-self: center;
+	}
+
+	.advantages-container li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.advantage-img img {
+		width: 90%;
 	}
 }
 
@@ -505,8 +574,8 @@ html {
 
 .Contacts {
 	height: 720px;
-	padding: 80px 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	padding: 100px 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url('../img/map.jpg');
 	background-size: cover;
 	background-position: center 0;
@@ -614,7 +683,7 @@ footer {
 .footer-container {
 	height: 100px;
 	max-width: 1840px;
-	padding: 0 100px;
+	padding: 0 200px;
 	margin: auto;
 
 	display: flex;
@@ -644,6 +713,7 @@ footer {
 @media (max-width: 960px) {
 	.footer-container {
 		height: 200px;
+		padding: 0 0;
 
 		display: flex;
 		flex-direction: column;
