@@ -44,7 +44,7 @@ html {
 }
 
 .header-logo {
-	height: 35px;
+	height: 50px;
 	align-self: center;
 }
 
@@ -103,7 +103,8 @@ html {
 }
 
 .menu-div {
-	width: 550px;
+	/*width: 550px;*/
+	width: 350px;
 	display: flex;
 
 	justify-content: space-between;
@@ -135,7 +136,7 @@ html {
 		display: inline;
 		position: absolute;
 		top: 0;
-		margin-top: 60px;
+		margin-top: 80px;
 		left: 0;
 		flex-direction: column;
 		width: 100%;
@@ -295,7 +296,6 @@ html {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-bottom: 35px;
 
 	display: flex;
 	justify-content: space-between;
@@ -491,131 +491,76 @@ html {
 
 /*О нас*/
 
-.about-wrapper {
-	padding: 10vh 0;
-	height: 100vh;
-	width: 75vw;
-	margin: auto;
-	text-align: center;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.about-wrapper h1 {
-	color: #fff;
-	font-size: 3.5vw;
-	font-weight: bold;
-	margin-bottom: 5vh;
-}
-
-.about-video iframe {
-	width: 47.1vw;
-	height: 26.6vw;
-}
-
-@media (orientation: portrait) and (max-width: 1200px) {
-	.about-wrapper {
-		padding: 10vh 0;
-		height: 100%;
-		width: 90vw;
-	}
-
-	.about-wrapper h1 {
-		font-size: 2vh;
-	}
-
-	.about-video iframe {
-		width: 90vw;
-		height: 50.85vw;
-	}
-}
-
 /*Услуги*/
 
-.Services {
+.services-container {
+	max-width: 1200px;
+	padding: 100px 0px;
+	margin: auto;
 	color: #fff;
 }
 
-.services-wrapper {
-	padding: 10vh 0;
-	width: 75vw;
-	min-height: 100vh;
-	margin: auto;
+.services-container h1 {
+	font-size: 38px;
+	font-style: italic;
 }
 
-.services-wrapper h1 {
-	font-size: 3vw;
-	margin-bottom: 30px;
+.services-container h2 {
+	font-size: 30px;
 }
 
 .services-table {
-	height: 100%;
-}
-
-.services-table td {
-	padding: 5px;
-}
-
-.Services ul {
-	list-style: none;
+	font-size: 20px;
 }
 
 .services-table table {
-	font-size: 1.18vw;
-	width: 75vw;
-	border: none;
+	width: 100%;
 	border-collapse: collapse;
 }
 
-.otst {
-	padding-top: 3px;
+.services-table td {
+	padding: 10px;
 }
 
-.column-header td {
-	font-size: 1.44vw;
+.services-painting thead {
+	border-bottom: 1px solid #fff;
 }
 
-.row-middle td {
-	border-top: 1px solid #fff;
-}
-
-.column-middle {
+.td-middle {
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 }
 
-.services-price {
+.tr-middle {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.td-price-tire {
+	width: 320px;
+}
+
+.td-price-collapse {
+	width: 185px;
+}
+
+.td-price,
+.tr-head {
 	text-align: center;
 }
 
-@media (orientation: portrait) and (max-width: 1200px) {
-	.services-wrapper {
-		width: 90vw;
-		min-height: 0vh;
-	}
-
-	.services-wrapper h1 {
-		margin-bottom: 4.2vh;
-		font-size: 3vh;
-	}
-
-	.services-table table {
-		font-size: 1.14vh;
-		width: 90vw;
-	}
-
-	.column-header td {
-		font-size: 1.44vh;
-	}
-
-	.otst {
-		padding-top: 0.42vh;
-	}
+thead,
+.td-first {
+	background-color: #bbc3c630;
 }
 
-/*Отзывы
+.tire-description,
+.painting-description {
+	color: #bbc3c6;
+	font-size: 20px;
+}
+
+/*Отзывы*/
 
 /*Контакты*/
 
@@ -739,12 +684,12 @@ footer {
 }
 
 .footLogo {
-	height: 35px;
+	height: 50px;
 	align-self: center;
 }
 
 .footLogo img {
-	height: 35px;
+	height: 50px;
 }
 
 .foot-contact {
