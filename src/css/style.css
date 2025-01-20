@@ -502,11 +502,13 @@ html {
 
 .services-container h1 {
 	font-size: 38px;
+	padding: 0 40px;
 	font-style: italic;
 }
 
 .services-container h2 {
 	font-size: 30px;
+	padding: 0 40px;
 }
 
 .services-table {
@@ -540,6 +542,10 @@ html {
 	width: 320px;
 }
 
+.td-price-tire-2 {
+	width: 105px;
+}
+
 .td-price-collapse {
 	width: 185px;
 }
@@ -556,13 +562,196 @@ thead,
 
 .tire-description,
 .painting-description {
-	color: #bbc3c6;
 	font-size: 20px;
+	padding: 0 40px;
+	color: #bbc3c6;
 }
 
-/*Отзывы*/
+.price-separator-br {
+	display: none;
+}
 
-/*Контакты*/
+.painting-ph,
+.painting-ph-2 {
+	display: none;
+}
+
+@media (max-width: 1200px) {
+	.services-container {
+		width: 960px;
+	}
+
+	.services-table {
+		font-size: 18px;
+	}
+
+	.td-price-tire {
+		width: 290px;
+	}
+
+	.td-price-tire-2 {
+		width: 90px;
+	}
+
+	.td-price-collapse {
+		width: 170px;
+	}
+
+	.painting-pc {
+		display: none;
+	}
+
+	.painting-ph {
+		width: 100%;
+		display: table;
+		text-align: center;
+	}
+}
+
+@media (max-width: 960px) {
+	.services-container {
+		width: 640px;
+	}
+
+	.services-table {
+		font-size: 16px;
+	}
+
+	.td-price-tire {
+		width: 260px;
+	}
+
+	.td-price-tire-2 {
+		width: 80px;
+	}
+
+	.td-price-collapse {
+		width: 155px;
+	}
+
+	.tire-description,
+	.painting-description {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 640px) {
+	.services-container {
+		width: 95vw;
+	}
+
+	.services-table {
+		font-size: 14px;
+	}
+
+	.services-container h1 {
+		font-size: 34px;
+	}
+
+	.services-container h2 {
+		font-size: 28px;
+	}
+
+	.tire-description,
+	.painting-description {
+		font-size: 16px;
+	}
+
+	.td-price-tire {
+		width: 80px;
+	}
+
+	.td-price-tire-2 {
+		width: 75px;
+	}
+
+	.td-price-collapse {
+		width: 70px;
+	}
+
+	.price-separator {
+		display: none;
+	}
+
+	.price-separator-br {
+		display: inline;
+	}
+}
+
+@media (max-width: 530px) {
+	.services-table {
+		font-size: 12px;
+	}
+
+	.services-container h1 {
+		font-size: 30px;
+	}
+
+	.services-container h2 {
+		font-size: 26px;
+	}
+
+	.tire-description,
+	.painting-description {
+		font-size: 14px;
+	}
+
+	.td-price-tire {
+		width: 72px;
+	}
+
+	.td-price-tire-2 {
+		width: 68px;
+	}
+
+	.td-price-collapse {
+		width: 65px;
+	}
+}
+
+@media (max-width: 460px) {
+	.services-table {
+		font-size: 12px;
+	}
+
+	.services-container h1 {
+		font-size: 25px;
+		padding: 0 10px;
+	}
+
+	.services-container h2 {
+		font-size: 22px;
+		padding: 0 10px;
+	}
+
+	.tire-description,
+	.painting-description {
+		font-size: 12px;
+		padding: 0 10px;
+	}
+
+	.painting-ph {
+		display: none;
+	}
+
+	.painting-ph-2 {
+		display: table;
+	}
+}
+
+@media (max-width: 320px) {
+	.services-container h1 {
+		font-size: 20px;
+		padding: 0 5px;
+	}
+
+	.services-container h2 {
+		font-size: 18px;
+		padding: 0 5px;
+	}
+}
+
+/*Отзывы*/ /*Контакты*/
 
 .Contacts {
 	height: 720px;
