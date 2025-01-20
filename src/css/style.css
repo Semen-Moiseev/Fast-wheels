@@ -182,45 +182,37 @@ html {
 /*Тело*/
 
 .background {
-	/*background-image: url('../img/background.png');
+	background-image: url('../img/background.png');
 	background-size: contain;
-	background-repeat: repeat;*/
-	background-color: #1e1e20;
+	background-repeat: repeat;
+	/*background-color: #1e1e20;*/
 }
 
 /*Обложка*/
 
 .Cover {
-	height: 100vh;
-	width: 100vw;
-	padding: 100px 0;
+	height: 720px;
+	padding-top: 200px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url('../img/background-cover.png');
 	background-size: cover;
 	background-position: center 0;
-
-	display: table-cell;
-	vertical-align: middle;
 }
 
-.cover-wrapper {
-	width: 100%;
-}
-
-.text-On-Photo {
+.cover-content {
 	padding: 0 40px;
 	max-width: 1200px;
 	margin: auto;
 	color: #fff;
 }
 
-.text-On-Photo h1 {
+.cover-content h1 {
 	font-size: 52px;
 	font-style: italic;
 	font-weight: bold;
 }
 
-.text-On-Photo h2 {
+.cover-content h2 {
 	font-size: 22px;
 	font-weight: 100;
 	color: #bbc3c6;
@@ -235,15 +227,15 @@ html {
 }
 
 @media (max-width: 1200px) {
-	.text-On-Photo {
+	.cover-content {
 		width: 960px;
 	}
 
-	.text-On-Photo h1 {
+	.cover-content h1 {
 		font-size: 48px;
 	}
 
-	.text-On-Photo h2 {
+	.cover-content h2 {
 		font-size: 20px;
 	}
 
@@ -253,21 +245,21 @@ html {
 }
 
 @media (max-width: 960px) {
-	.text-On-Photo {
+	.cover-content {
 		width: 640px;
 	}
 }
 
 @media (max-width: 640px) {
-	.text-On-Photo {
+	.cover-content {
 		width: 100%;
 	}
 
-	.text-On-Photo h1 {
+	.cover-content h1 {
 		font-size: 30px;
 	}
 
-	.text-On-Photo h2 {
+	.cover-content h2 {
 		font-size: 18px;
 	}
 
@@ -277,7 +269,7 @@ html {
 }
 
 @media (max-width: 320px) {
-	.text-On-Photo {
+	.cover-content {
 		padding: 0 20px;
 	}
 }
@@ -751,7 +743,9 @@ thead,
 	}
 }
 
-/*Отзывы*/ /*Контакты*/
+/*Отзывы*/
+
+/*Контакты*/
 
 .Contacts {
 	height: 720px;
