@@ -5,6 +5,11 @@
 	font-family: 'Verdana';
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
 body,
 html {
 	width: 100%;
@@ -114,12 +119,6 @@ html {
 .menu-ul {
 	display: none;
 	list-style-type: none;
-}
-
-.menu-div a,
-.menu-ul a {
-	color: #fff;
-	text-decoration: none;
 }
 
 @media (max-width: 1100px) {
@@ -564,8 +563,13 @@ thead,
 }
 
 .painting-ph,
-.painting-ph-2 {
+.painting-ph-2,
+.td-price-tire-ph {
 	display: none;
+}
+
+.td-price-s {
+	font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -668,6 +672,18 @@ thead,
 	.price-separator-br {
 		display: inline;
 	}
+
+	.td-price-s {
+		font-size: 11px;
+	}
+
+	.td-price-tire-pc {
+		display: none;
+	}
+
+	.td-price-tire-ph {
+		display: inline;
+	}
 }
 
 @media (max-width: 530px) {
@@ -699,6 +715,10 @@ thead,
 	.td-price-collapse {
 		width: 65px;
 	}
+
+	.td-price-s {
+		font-size: 10px;
+	}
 }
 
 @media (max-width: 460px) {
@@ -722,12 +742,28 @@ thead,
 		padding: 0 10px;
 	}
 
+	.td-price-tire {
+		width: 60px;
+	}
+
+	.td-price-tire-2 {
+		width: 55px;
+	}
+
+	.td-price-collapse {
+		width: 55px;
+	}
+
 	.painting-ph {
 		display: none;
 	}
 
 	.painting-ph-2 {
 		display: table;
+	}
+
+	.services-table td {
+		padding: 3px;
 	}
 }
 
@@ -775,7 +811,7 @@ thead,
 
 .contacts {
 	background-color: #000000cb;
-	padding: 50px 70px;
+	padding: 50px;
 	border-radius: 40px;
 	font-size: 22px;
 	margin: 0 auto;
@@ -789,9 +825,12 @@ thead,
 	color: #bbc3c6;
 }
 
-.cont a {
-	color: #fff;
-	text-decoration: none;
+.cont-br960 {
+	display: none;
+}
+
+.cont-br640 {
+	display: none;
 }
 
 @media (max-width: 960px) {
@@ -800,10 +839,14 @@ thead,
 	}
 
 	.contacts {
-		width: 600px;
+		width: 620px;
 		font-size: 21px;
 		border-radius: 30px;
-		padding: 30px 50px;
+		padding: 30px;
+	}
+
+	.cont-br960 {
+		display: inline;
 	}
 }
 
@@ -822,6 +865,10 @@ thead,
 		padding: 20px 30px;
 		border-radius: 25px;
 	}
+
+	.cont-br640 {
+		display: inline;
+	}
 }
 
 @media (max-width: 300px) {
@@ -834,9 +881,9 @@ thead,
 	}
 
 	.contacts {
-		width: 90%;
+		width: 98%;
 		font-size: 16px;
-		padding: 20px 30px;
+		padding: 10px;
 		border-radius: 25px;
 	}
 }
@@ -856,7 +903,7 @@ footer {
 }
 
 .footer-container {
-	height: 100px;
+	height: 120px;
 	max-width: 1840px;
 	padding: 0 200px;
 	margin: auto;
@@ -876,7 +923,7 @@ footer {
 }
 
 .foot-contact {
-	height: 100px;
+	height: 100%;
 	color: #fff;
 	font-size: 16px;
 
