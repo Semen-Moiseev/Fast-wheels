@@ -932,6 +932,7 @@ footer {
 
 .footLogo {
 	height: 50px;
+	margin: 20px 0;
 	align-self: center;
 }
 
@@ -958,9 +959,5 @@ footer {
 		flex-direction: column;
 		justify-content: space-between;
 		text-align: center;
-	}
-
-	.footLogo {
-		margin-bottom: 20px;
 	}
 }
