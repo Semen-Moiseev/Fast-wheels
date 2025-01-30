@@ -181,7 +181,7 @@ html {
 /*Тело*/
 
 .background {
-	background-image: url('../img/background.png');
+	background: url('../img/background.png');
 	background-size: contain;
 	background-repeat: repeat;
 	/*background-color: #1e1e20;*/
@@ -190,7 +190,7 @@ html {
 /*Обложка*/
 
 .Cover {
-	height: 720px;
+	height: 800px;
 	padding-top: 200px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url('../img/background-cover.png');
@@ -538,7 +538,8 @@ html {
 }
 
 .td-price-collapse {
-	width: 185px;
+	width: 170px;
+	border-left: 1px solid #fff;
 }
 
 .td-price,
@@ -570,9 +571,10 @@ thead,
 
 .td-price-s {
 	font-size: 12px;
+	color: #bbc3c6;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
 	.services-container {
 		width: 960px;
 	}
@@ -590,7 +592,7 @@ thead,
 	}
 
 	.td-price-collapse {
-		width: 170px;
+		width: 160px;
 	}
 
 	.painting-pc {
@@ -604,7 +606,7 @@ thead,
 	}
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1040px) {
 	.services-container {
 		width: 640px;
 	}
@@ -622,7 +624,7 @@ thead,
 	}
 
 	.td-price-collapse {
-		width: 155px;
+		width: 150px;
 	}
 
 	.tire-description,
@@ -631,9 +633,9 @@ thead,
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
 	.services-container {
-		width: 95vw;
+		width: 90vw;
 	}
 
 	.services-table {
@@ -872,6 +874,21 @@ thead,
 }
 
 @media (max-width: 300px) {
+	.Contacts {
+		height: 650px;
+		padding-top: 100px;
+		padding-bottom: 50px;
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/map.jpg');
+		background-size: cover;
+		background-position: center 0;
+		color: #fff;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
 	.Contacts h2 {
 		font-size: 16px;
 	}
@@ -882,7 +899,7 @@ thead,
 
 	.contacts {
 		width: 98%;
-		font-size: 16px;
+		font-size: 14px;
 		padding: 10px;
 		border-radius: 25px;
 	}
@@ -941,5 +958,9 @@ footer {
 		flex-direction: column;
 		justify-content: space-between;
 		text-align: center;
+	}
+
+	.footLogo {
+		margin-bottom: 20px;
 	}
 }
