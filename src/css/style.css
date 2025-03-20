@@ -835,6 +835,18 @@ thead,
 	display: none;
 }
 
+.contacts-sn {
+	height: 50px;
+	padding: 0 125px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.cont-sn img {
+	height: 100%;
+}
+
 @media (max-width: 960px) {
 	.Contacts {
 		padding-bottom: 40px;
@@ -871,6 +883,11 @@ thead,
 	.cont-br640 {
 		display: inline;
 	}
+
+	.contacts-sn {
+		height: 40px;
+		padding: 0 20px;
+	}
 }
 
 @media (max-width: 300px) {
@@ -902,6 +919,11 @@ thead,
 		font-size: 14px;
 		padding: 10px;
 		border-radius: 25px;
+	}
+
+	.contacts-sn {
+		height: 25px;
+		padding: 0 20px;
 	}
 }
 
