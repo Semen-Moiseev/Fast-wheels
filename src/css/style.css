@@ -193,7 +193,7 @@ html {
 	height: 800px;
 	padding-top: 200px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../img/background-cover.png');
+		url('../img/background-cover.jpg');
 	background-size: cover;
 	background-position: center 0;
 }
@@ -244,6 +244,14 @@ html {
 }
 
 @media (max-width: 960px) {
+	.Cover {
+		height: 800px;
+		padding-top: 200px;
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			url('../img/background-cover-mobile.jpeg');
+		background-size: cover;
+		background-position: center 0;
+	}
 	.cover-content {
 		width: 640px;
 	}
@@ -315,6 +323,7 @@ html {
 }
 
 .point-text {
+	font-size: 20px;
 	margin-top: 50px;
 }
 
@@ -511,7 +520,7 @@ html {
 	border-collapse: collapse;
 }
 
-.services-table td {
+.td-padd {
 	padding: 10px;
 }
 
@@ -527,6 +536,11 @@ html {
 .tr-middle {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
+}
+
+.tr-middle-r-price {
+	border-top: 1px solid #8d8d8d;
+	border-bottom: 1px solid #8d8d8d;
 }
 
 .td-price-tire {
@@ -554,8 +568,8 @@ thead,
 
 .tire-description,
 .painting-description {
-	font-size: 20px;
-	padding: 0 40px;
+	font-size: 18px;
+	padding: 0 20px;
 	color: #bbc3c6;
 }
 
@@ -656,7 +670,7 @@ thead,
 	}
 
 	.td-price-tire {
-		width: 80px;
+		width: 150px;
 	}
 
 	.td-price-tire-2 {
@@ -707,7 +721,7 @@ thead,
 	}
 
 	.td-price-tire {
-		width: 72px;
+		width: 120px;
 	}
 
 	.td-price-tire-2 {
@@ -745,7 +759,7 @@ thead,
 	}
 
 	.td-price-tire {
-		width: 60px;
+		width: 100px;
 	}
 
 	.td-price-tire-2 {
@@ -764,7 +778,7 @@ thead,
 		display: table;
 	}
 
-	.services-table td {
+	.td-padd {
 		padding: 3px;
 	}
 }
