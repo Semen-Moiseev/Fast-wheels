@@ -903,6 +903,11 @@ thead,
 		height: 40px;
 		padding: 0 20px;
 	}
+
+	.cont-sn img {
+		height: 40px;
+		width: 40px;
+	}
 }
 
 @media (max-width: 300px) {
@@ -937,8 +942,13 @@ thead,
 	}
 
 	.contacts-sn {
-		height: 25px;
+		height: 35px;
 		padding: 0 20px;
+	}
+
+	.cont-sn img {
+		height: 35px;
+		width: 35px;
 	}
 }
 
