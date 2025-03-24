@@ -193,7 +193,7 @@ html {
 	height: 800px;
 	padding-top: 200px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../img/background-cover.jpg');
+		url('../img/background-cover2.jpg');
 	background-size: cover;
 	background-position: center 0;
 }
@@ -248,7 +248,7 @@ html {
 		height: 800px;
 		padding-top: 200px;
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url('../img/background-cover-mobile.jpeg');
+			url('../img/background-cover-mobile.jpg');
 		background-size: cover;
 		background-position: center 0;
 	}
