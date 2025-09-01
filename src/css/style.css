@@ -797,6 +797,228 @@ thead,
 
 /*Отзывы*/
 
+.reviews-wrapper {
+	padding-bottom: 100px;
+}
+
+.reviews-container {
+	max-width: 820px;
+	margin: auto;
+	width: 100%;
+	background: #2a2a2d; /*Фон окна ffffff*/
+	border-radius: 16px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /*Тень вокруг окна*/
+	overflow: hidden;
+}
+
+.reviews-header {
+	background: #000000; /*Шапка окна 2c3e50*/
+	color: #fff; /*Текст шапки окна*/
+	padding: 25px;
+	text-align: center;
+}
+
+.reviews-header h1 {
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.average-rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.average-rating .stars {
+	font-size: 20px;
+	color: #ffd700; /*Звезды в шапке*/
+}
+
+.average-rating .rating-value {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.reviews-body {
+	padding: 30px;
+}
+
+.review-card {
+	padding: 25px;
+	border-radius: 12px;
+	background: #4e4e51; /*Фон отзыва fff*/
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+	margin-bottom: 20px;
+	border-left: 4px solid #962715; /*Обводка слева отзыва 3498db*/
+	transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.reviewer-info {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.avatar {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: #3a3a3d; /*Фон аватара e0e0e0*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: #fff; /*Текст аватара 555*/
+	border: 2px solid #962715;
+}
+
+.reviewer-name {
+	font-weight: 600;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.review-date {
+	color: #ababab; /*Дата 777*/
+	font-size: 14px;
+}
+
+.review-rating {
+	color: #ffd700; /*Цвет звёзд отзыва*/
+	font-size: 16px;
+}
+
+.review-text {
+	color: #ffffff; /*Текст отзыва 444*/
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.review-footer {
+	display: flex;
+	justify-content: space-between;
+	color: #ababab; /*Текст описания отзыва 777*/
+	font-size: 14px;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.nav-btn {
+	background: #962715; /*Цвет кнопок навигации 5c89b6*/
+	color: #fff; /*Цвет текста кнопок*/
+	border: none;
+	padding: 12px 25px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: background 0.3s;
+}
+
+.nav-btn:hover {
+	background: #7a1f10; /*Цвет кнопки после наводки курсором 1a252f*/
+}
+
+.nav-btn:disabled {
+	background: #5a5a5d; /*Цвет кнопки когда не нажать bdc3c7*/
+	cursor: not-allowed;
+}
+
+.counter {
+	display: flex;
+	align-items: center;
+	color: #ababab; /*Цвет количества (1 из 5) 7f8c8d*/
+	font-size: 15px;
+}
+
+.all-reviews {
+	text-align: center;
+	margin-top: 40px;
+	padding-top: 25px;
+	border-top: 1px solid #5a5a5d; /*Горизонтальная линия снизу eee*/
+}
+
+.all-reviews-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: #fff; /*Текст про 2ГИС 3498db  b32d18*/
+	text-decoration: none;
+	font-weight: 500;
+	padding: 10px 20px;
+	border: 1px solid #fff; /*Обводка 2ГИС 3498db  b32d18*/
+	border-radius: 8px;
+	transition: all 0.3s;
+}
+
+.all-reviews-link:hover {
+	background: #962715; /*2ГИС фон после наводки курсором 3498db*/
+	border: 1px solid #962715;
+	color: white; /*2ГИС текст после наводки курсором*/
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 20px;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #5a5a5d; /*Точки навигации ddd*/
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.dot.active {
+	background: #962715; /*Активная точка 2c3e50*/
+}
+
+@media (max-width: 600px) {
+	.review-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.controls {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.nav-btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.counter {
+		justify-content: center;
+	}
+}
+
 /*Контакты*/
 
 .Contacts {
