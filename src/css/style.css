@@ -109,7 +109,7 @@ html {
 
 .menu-div {
 	/*width: 550px;*/
-	width: 350px;
+	width: 450px;
 	display: flex;
 
 	justify-content: space-between;
@@ -569,7 +569,7 @@ thead,
 .tire-description,
 .painting-description {
 	font-size: 18px;
-	padding: 0 20px;
+	padding: 0 40px;
 	color: #bbc3c6;
 }
 
@@ -798,7 +798,7 @@ thead,
 /*Отзывы*/
 
 .reviews-wrapper {
-	padding-bottom: 100px;
+	padding: 100px 0px;
 }
 
 .reviews-container {
