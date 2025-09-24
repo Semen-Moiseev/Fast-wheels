@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const nextBtn = document.getElementById('nextBtn') //Кнопка вперед
 	const currentEl = document.getElementById('current') //Номер отзыва (из 15)
 	const totalEl = document.getElementById('total') //Количество отзывов всего
-	const dots = document.querySelectorAll('.dot') //Точки внизу отзывов
 	const reviewsSection = document.querySelector('.review-card') //Блок отзывы
 
 	let currentReview = 0
@@ -137,37 +136,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		const review = reviews[index]
 
 		reviewCard.innerHTML = `
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <div class="avatar">${review.avatar}</div>
-                            <div>
-                                <div class="reviewer-name">${review.name}</div>
-                                <div class="review-date">${review.date}</div>
-                            </div>
-                        </div>
-                        <div class="review-rating">
-                            ${'<i class="fas fa-star"></i>'.repeat(
-															review.rating
-														)}
-                            ${'<i class="far fa-star"></i>'.repeat(
-															5 - review.rating
-														)}
-                        </div>
-                    </div>
-                    <div class="review-text">
-                        ${review.text}
-                    </div>
-                    <div class="review-footer">
-                        <div>Отзыв оставлен через 2ГИС</div>
-                    </div>
-                `
+		<div class="review-header">
+			<div class="reviewer-info">
+				<div class="avatar">${review.avatar}</div>
+			<div>
+			<div class="reviewer-name">${review.name}</div>
+			<div class="review-date">${review.date}</div>
+		</div>
+
+		</div>
+			<div class="review-rating">
+				${'<i class="fas fa-star"></i>'.repeat(review.rating)}
+				${'<i class="far fa-star"></i>'.repeat(5 - review.rating)}
+			</div>
+		</div>
+
+		<div class="review-text"> ${review.text} </div>
+
+		<div class="review-footer">
+			<div>Отзыв оставлен через 2ГИС</div>
+		</div>
+		`
 
 		currentEl.textContent = index + 1
-
-		// Обновление dots
-		dots.forEach((dot, i) => {
-			dot.classList.toggle('active', i === index)
-		})
 
 		// Обновление статуса кнопок
 		prevBtn.disabled = index === 0
@@ -188,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		autoPlayInterval = setInterval(() => {
 			// Автопрокрутка работает только когда отзывы видны на экране
-			// Автопрокрутка работает только когда отзывы видны на экране
 			if (isElementInViewport(reviewsSection)) {
 				goToNextReview()
 			}
@@ -205,14 +195,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	nextBtn.addEventListener('click', () => {
 		goToNextReview()
-	})
-
-	//Dot навигации
-	dots.forEach(dot => {
-		dot.addEventListener('click', () => {
-			currentReview = parseInt(dot.getAttribute('data-index'))
-			showReview(currentReview)
-		})
 	})
 
 	// Перезапускаем автопрокрутку при скролле
