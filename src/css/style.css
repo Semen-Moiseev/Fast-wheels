@@ -185,7 +185,7 @@ html {
 /*ТЕЛО*/
 
 .background {
-	background: url('../img/background.png');
+	background: url('../img/background.webp');
 	background-size: contain;
 	background-repeat: repeat;
 	/*background-color: #1e1e20;*/
@@ -197,7 +197,7 @@ html {
 	height: 800px;
 	padding-top: 200px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../img/background-cover2.jpg');
+		url('../img/background-cover.webp');
 	background-size: cover;
 	background-position: center 0;
 }
@@ -259,7 +259,7 @@ html {
 		height: 800px;
 		padding-top: 200px;
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url('../img/background-cover-mobile.jpg');
+			url('../img/background-cover-mobile.webp');
 		background-size: cover;
 		background-position: center 0;
 	}
@@ -303,7 +303,7 @@ html {
 }
 
 .point-li {
-	background-image: url('../img/background-logo.png');
+	background-image: url('../img/background-logo.webp');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -508,7 +508,7 @@ html {
 
 .About {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../img/background-cover2.jpg');
+		url('../img/background-cover.webp');
 	background-size: cover;
 	background-position: center 0;
 }
@@ -1142,7 +1142,7 @@ thead,
 	height: 720px;
 	padding: 100px 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../img/map.jpg');
+		url('../img/map.webp');
 	background-size: cover;
 	background-position: center 0;
 	color: #fff;
@@ -1255,7 +1255,7 @@ thead,
 		padding-top: 100px;
 		padding-bottom: 50px;
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url('../img/map.jpg');
+			url('../img/map.webp');
 		background-size: cover;
 		background-position: center 0;
 		color: #fff;
