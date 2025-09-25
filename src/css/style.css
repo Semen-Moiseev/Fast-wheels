@@ -245,7 +245,7 @@ html {
 		font-size: 48px;
 	}
 
-	.cover-content h2 {
+	.cover-content p {
 		font-size: 20px;
 	}
 
@@ -277,7 +277,7 @@ html {
 		font-size: 30px;
 	}
 
-	.cover-content h2 {
+	.cover-content p {
 		font-size: 18px;
 	}
 
@@ -323,11 +323,8 @@ html {
 	font-style: italic;
 }
 
-.point-first h3 {
-	margin-top: 30px;
-}
-
 .advantage-points h3 {
+	margin-top: 30px;
 	font-size: 30px;
 }
 
@@ -344,17 +341,13 @@ html {
 	width: 430px;
 }
 
-.advantage-img-w img {
-	width: 530px;
-}
-
 .advantage-img-mob {
 	display: none;
 }
 
 .advantage-button-wrapper {
 	text-align: center;
-	margin: 70px 0;
+	margin: 50px 0;
 }
 
 .advantage-button-signUp {
@@ -382,10 +375,6 @@ html {
 	.advantage-img img {
 		width: 370px;
 	}
-
-	.advantage-img-w img {
-		width: 450px;
-	}
 }
 
 @media (max-width: 960px) {
@@ -398,53 +387,35 @@ html {
 
 		display: flex;
 		justify-content: space-between;
-	}
-
-	.point-first {
-		padding: 100px 20px;
-	}
-
-	.point-second {
-		padding: 0 20px;
+		padding: 50px 20px;
 	}
 
 	.advantage-points {
 		width: 300px;
 	}
 
-	.point-text {
-		margin-top: 30px;
-	}
-
-	.advantage-points h1 {
+	.advantage-points h2 {
 		font-size: 28px;
 		font-style: italic;
 	}
 
-	.advantage-points h2 {
+	.advantage-points h3 {
 		font-size: 22px;
+	}
+
+	.point-text {
+		margin-top: 30px;
+		font-size: 18px;
 	}
 
 	.advantage-img img {
 		width: 270px;
-	}
-
-	.advantage-img-w img {
-		width: 280px;
 	}
 }
 
 @media (max-width: 640px) {
 	.advantages-container {
 		width: 100%;
-	}
-
-	.advantage-points {
-		align-self: center;
-	}
-
-	.point-text {
-		margin-top: 20px;
 	}
 
 	.point-li {
@@ -454,8 +425,17 @@ html {
 		justify-content: space-between;
 	}
 
-	.advantage-img {
+	.advantage-points {
+		align-self: center;
+		width: 370px;
+	}
+
+	.point-text {
 		margin-top: 20px;
+	}
+
+	.advantage-img {
+		margin-top: 40px;
 	}
 
 	.advantage-img-pc {
@@ -472,19 +452,22 @@ html {
 }
 
 @media (max-width: 460px) {
+	.advantage-points {
+		align-self: center;
+		width: 280px;
+	}
+
 	.advantage-button-signUp {
-		font-size: 3.95vw;
+		padding: 14px 28px;
+		font-size: 16px;
 	}
 }
 
 @media (max-width: 320px) {
-	.advantage-points h1 {
-		font-size: 22px;
-		font-style: italic;
-	}
-
-	.advantage-points h2 {
-		font-size: 18px;
+	.point-li {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.advantage-points {
@@ -493,14 +476,26 @@ html {
 		align-self: center;
 	}
 
-	.point-li {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+	.advantage-points h2 {
+		font-size: 22px;
+		font-style: italic;
+	}
+
+	.advantage-points h3 {
+		font-size: 18px;
+	}
+
+	.point-text {
+		font-size: 16px;
 	}
 
 	.advantage-img img {
 		width: 90%;
+	}
+
+	.advantage-button-signUp {
+		padding: 14px 20px;
+		font-size: 14px;
 	}
 }
 
@@ -560,8 +555,8 @@ html {
 }
 
 .video-iframe {
-	width: 1200px;
-	height: 720px;
+	width: 100%;
+	height: 675px;
 	border: none;
 	border-radius: 15px;
 	display: block;
@@ -574,8 +569,7 @@ html {
 
 	.video-frame,
 	.video-iframe {
-		width: 960px;
-		height: 570px;
+		height: 540px;
 	}
 }
 
@@ -584,31 +578,29 @@ html {
 		width: 640px;
 	}
 
+	.section-header h2 {
+		font-size: 28px;
+	}
+
+	.section-header p {
+		font-size: 18px;
+	}
+
 	.video-frame,
 	.video-iframe {
-		width: 640px;
-		height: 384px;
+		height: 360px;
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 655px) {
 	.about-container {
 		width: 460px;
 		padding: 30px 10px;
 	}
 
-	.section-title {
-		font-size: 18px;
-	}
-
-	.section-subtitle {
-		font-size: 14px;
-	}
-
 	.video-frame,
 	.video-iframe {
-		width: 460px;
-		height: 276px;
+		height: 248px;
 	}
 }
 
@@ -618,10 +610,17 @@ html {
 		padding: 10px 10px;
 	}
 
+	.section-header h2 {
+		font-size: 24px;
+	}
+
+	.section-header p {
+		font-size: 16px;
+	}
+
 	.video-frame,
 	.video-iframe {
-		width: 320px;
-		height: 192px;
+		height: 168px;
 	}
 }
 
@@ -731,6 +730,7 @@ thead,
 
 	.services-table {
 		font-size: 18px;
+		padding: 30px 0px;
 	}
 
 	.td-price-tire {
@@ -753,6 +753,10 @@ thead,
 		width: 100%;
 		display: table;
 		text-align: center;
+	}
+
+	.tire-description {
+		padding: 30px 0px;
 	}
 }
 
@@ -792,11 +796,11 @@ thead,
 		font-size: 14px;
 	}
 
-	.services-container h1 {
+	.services-container h2 {
 		font-size: 34px;
 	}
 
-	.services-container h2 {
+	.services-container h3 {
 		font-size: 28px;
 	}
 
@@ -843,11 +847,11 @@ thead,
 		font-size: 12px;
 	}
 
-	.services-container h1 {
+	.services-container h2 {
 		font-size: 30px;
 	}
 
-	.services-container h2 {
+	.services-container h3 {
 		font-size: 26px;
 	}
 
@@ -878,20 +882,20 @@ thead,
 		font-size: 12px;
 	}
 
-	.services-container h1 {
+	.services-container h2 {
 		font-size: 25px;
 		padding: 0 10px;
+		padding-bottom: 30px;
 	}
 
-	.services-container h2 {
+	.services-container h3 {
 		font-size: 22px;
 		padding: 0 10px;
 	}
 
-	.tire-description,
-	.painting-description {
+	.tire-description {
 		font-size: 12px;
-		padding: 0 10px;
+		padding: 30px 10px;
 	}
 
 	.td-price-tire {
@@ -920,14 +924,24 @@ thead,
 }
 
 @media (max-width: 320px) {
-	.services-container h1 {
+	.services-container h2 {
 		font-size: 20px;
+		padding: 0 5px;
+		padding-bottom: 20px;
+	}
+
+	.services-container h3 {
+		font-size: 18px;
 		padding: 0 5px;
 	}
 
-	.services-container h2 {
-		font-size: 18px;
-		padding: 0 5px;
+	.services-table {
+		padding: 15px 0px;
+	}
+
+	.tire-description {
+		font-size: 12px;
+		padding: 15px 10px;
 	}
 }
 
@@ -1121,6 +1135,11 @@ thead,
 		gap: 10px;
 	}
 
+	.reviews-header h2 {
+		font-weight: 400;
+		font-size: 28px;
+	}
+
 	.controls {
 		flex-direction: column;
 		gap: 15px;
@@ -1203,6 +1222,7 @@ thead,
 
 @media (max-width: 960px) {
 	.Contacts {
+		height: 670px;
 		padding-bottom: 40px;
 	}
 
@@ -1219,12 +1239,16 @@ thead,
 }
 
 @media (max-width: 640px) {
-	.Contacts h2 {
-		font-size: 20px;
+	.Contacts {
+		height: 580px;
 	}
 
-	.Contacts h1 {
-		font-size: 44px;
+	.Contacts p {
+		font-size: 18px;
+	}
+
+	.Contacts h2 {
+		font-size: 40px;
 	}
 
 	.contacts {
@@ -1251,7 +1275,7 @@ thead,
 
 @media (max-width: 300px) {
 	.Contacts {
-		height: 650px;
+		height: 520px;
 		padding-top: 100px;
 		padding-bottom: 50px;
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -1265,11 +1289,11 @@ thead,
 		justify-content: space-between;
 	}
 
-	.Contacts h2 {
+	.Contacts p {
 		font-size: 16px;
 	}
 
-	.Contacts h1 {
+	.Contacts h2 {
 		font-size: 34px;
 	}
 
