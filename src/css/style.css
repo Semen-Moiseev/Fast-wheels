@@ -648,26 +648,37 @@ html {
 
 .services-container h2 {
 	font-size: 38px;
-	padding: 0 40px;
+	margin: 0 40px;
 	font-style: italic;
 }
 
 .services-container h3 {
 	font-size: 30px;
-	padding: 30px;
+}
+
+.services-tire-h {
+	margin: 30px 40px;
+}
+
+.services-restoration-h {
+	margin: 0 40px;
 }
 
 .radius-select {
 	font-size: 20px;
-	padding: 30px;
+	margin: 0 40px;
 	padding-top: 0;
 }
 
 .radius-select select {
 	font-size: 18px;
+	padding: 6px 10px;
+	border-radius: 8px;
+	border: 1px solid var(--neutral-grey);
+	cursor: pointer;
 }
 
-.services-tire {
+.line-service-cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -678,6 +689,7 @@ html {
 	color: var(--black);
 	border-radius: 16px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin: 30px 0;
 	overflow: hidden;
 	width: 100%;
 	width: 350px;
@@ -704,35 +716,22 @@ html {
 	justify-content: space-between;
 }
 
-.info h4 {
-	margin: 0;
+.top-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 30px;
 }
 
-.services {
-	flex-grow: 1;
+.bottom-info {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.price {
+.service-price {
 	font-size: 1.4rem;
 	font-weight: bold;
-}
-
-.bottom {
-	display: flex;
-	flex-direction: column;
-	padding-top: 15px;
-	gap: 10px;
-}
-
-select {
-	padding: 6px 10px;
-	border-radius: 8px;
-	border: 1px solid var(--neutral-grey);
-	cursor: pointer;
-	font-size: 1rem;
 }
 
 .service-button-wrapper {

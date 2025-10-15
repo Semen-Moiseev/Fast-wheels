@@ -58,7 +58,7 @@ select.addEventListener('change', () => {
 
 		const price = prices[type][selectedRadius]
 		if (price) {
-			card.querySelector('.price span').textContent = price
+			card.querySelector('.service-price span').textContent = price
 		}
 	})
 })
